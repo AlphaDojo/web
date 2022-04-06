@@ -6,15 +6,12 @@ import Services from "./Pages/Services";
 import ContactUs from "./Pages/ContactUs";
 import ThankYou from "./Pages/ThankYou";
 import ErrorPage from "./Pages/ErrorPage";
+import Navbar from "./Components/Navbar/Navbar";
 
-function App() {
+function App({Component, pageProps}) {
   return (
     <Router>
-      <nav>
-        <Link to="/"> Home </Link>
-        <Link to="/about"> About </Link>
-        <Link to="/services"> Services </Link>
-      </nav>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
