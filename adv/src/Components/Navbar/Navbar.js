@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Navbar.css';
 import navbarLogo from './Advenient-Logo 3.png';
 export default class Navbar extends Component {
